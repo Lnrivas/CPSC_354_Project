@@ -1,6 +1,7 @@
 ## Group Members
 1. Luis Rivas
 2. Kevan Parang
+3. Ivan Orlovic
 
 ## Project Description
 
