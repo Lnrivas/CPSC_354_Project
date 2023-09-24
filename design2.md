@@ -14,4 +14,5 @@
 ## Describe the data that your project needs to maintain and explain how the blockbased programming language interacts with this data. Design the outlines of a database (if appropriate).
 
 
-## If your project involves external divices (cars, robots, IoT, etc), you will want to test your code on a simulator. Describe the simulator software you are planning to use.
+## If your project involves external devices (cars, robots, IoT, etc), you will want to test your code on a simulator. Describe the simulator software you are planning to use.
+This project does not involve external devices. 
