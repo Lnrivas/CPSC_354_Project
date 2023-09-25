@@ -2,7 +2,7 @@ Blockly.Blocks['abs'] = {
   init: function() {
     this.appendValueInput("VAR")
         .setCheck("var")
-        .appendField("lam");
+        .appendField("Workout");
     this.appendValueInput("EXPR")
         .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
@@ -17,7 +17,7 @@ Blockly.Blocks['app'] = {
   init: function() {
     this.appendValueInput("EXPR1")
         .setCheck(["var", "exp", "Number"])
-        .appendField("app");
+        .appendField("Exercise");
     this.appendValueInput("EXPR2")
         .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
@@ -31,7 +31,7 @@ Blockly.Blocks['app'] = {
 Blockly.Blocks['var'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("var")
+        .appendField("Set(s)")
         .appendField(new Blockly.FieldTextInput("x"), "NAME");
     this.setOutput(true, "var");
     this.setColour(430);
@@ -39,6 +39,31 @@ Blockly.Blocks['var'] = {
     this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['var1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Rep(s)")
+        .appendField(new Blockly.FieldTextInput("x"), "NAME");
+    this.setOutput(true, "var1");
+    this.setColour(430);
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['var2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Rest")
+        .appendField(new Blockly.FieldTextInput("x"), "NAME");
+    this.setOutput(true, "var2");
+    this.setColour(430);
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['math_number'] = {
   /**
    * Block for numeric value.
@@ -72,6 +97,19 @@ Blockly.JavaScript.forBlock['var'] = function(block) {
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
+
+Blockly.JavaScript.forBlock['var1'] = function(block) {
+  var var_name = block.getFieldValue('NAME');
+  var code = var_name;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.JavaScript.forBlock['var2'] = function(block) {
+  var var_name = block.getFieldValue('NAME');
+  var code = var_name;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
 Blockly.Blocks['math_arithmetic'] = {
   /**
    * Block for arithmetic operations.
