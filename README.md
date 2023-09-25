@@ -4,6 +4,7 @@
 1. Luis Rivas
 2. Kevan Parang
 3. Ivan Orlovic
+4. Peter Senko
 
 ## Project Description
 The Fitness Program DSL project is a dynamic and interactive platform that seamlessly combines the world of fitness and programming. It offers users a visually intuitive means to create personalized workout routines while delving into core concepts of parsing, interpretation, and compilation. At its core, this DSL empowers users to design fitness routines by dragging and dropping visual blocks representing exercises, repetitions, sets, and rest, making fitness accessible to individuals of all experience levels. This visual representation necessitates robust parsing capabilities, as the DSL must intelligently convert these visual routines into structured workout plans.
