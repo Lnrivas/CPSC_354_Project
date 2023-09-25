@@ -1,8 +1,8 @@
-Blockly.Blocks['Workout'] = {
+Blockly.Blocks['abs'] = {
   init: function() {
     this.appendValueInput("VAR")
         .setCheck("var")
-        .appendField("Workout");
+        .appendField("lam");
     this.appendValueInput("EXPR")
         .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
@@ -17,7 +17,7 @@ Blockly.Blocks['app'] = {
   init: function() {
     this.appendValueInput("EXPR1")
         .setCheck(["var", "exp", "Number"])
-        .appendField("Exercise");
+        .appendField("app");
     this.appendValueInput("EXPR2")
         .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
@@ -31,7 +31,7 @@ Blockly.Blocks['app'] = {
 Blockly.Blocks['var'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Set(s)")
+        .appendField("var")
         .appendField(new Blockly.FieldTextInput("x"), "NAME");
     this.setOutput(true, "var");
     this.setColour(430);
@@ -53,7 +53,7 @@ Blockly.Blocks['math_number'] = {
     this.setTooltip(Blockly.Msg.MATH_NUMBER_TOOLTIP);
   }
 };
-Blockly.JavaScript.forBlock['Workout'] = function(block) {
+Blockly.JavaScript.forBlock['abs'] = function(block) {
   var var_name = Blockly.JavaScript.valueToCode(block, 'VAR', Blockly.JavaScript.ORDER_NONE);
   var expr_code = Blockly.JavaScript.valueToCode(block, 'EXPR', Blockly.JavaScript.ORDER_NONE);
   var code = '(' + var_name + ' => ' + expr_code + ')';
