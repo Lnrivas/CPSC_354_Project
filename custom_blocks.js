@@ -17,10 +17,9 @@ Blockly.Blocks['app'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Set(s)")
-        .appendField(new Blockly.FieldTextInput("squats"), "NAME");
+        .appendField(new Blockly.FieldTextInput("squats"), "Exercise");
     this.appendValueInput("EXPR1")
         .setCheck(["var", "exp", "Number"])
-        .appendField("Exercise");
     this.appendValueInput("EXPR2")
         .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
