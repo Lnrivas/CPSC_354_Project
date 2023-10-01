@@ -139,3 +139,48 @@ Blockly.Blocks['math_arithmetic'] = {
     this.setTooltip(Blockly.Msg.MATH_ARITHMETIC_TOOLTIP);
   }
 };
+
+Blockly.Blocks['workout'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Workout");
+    this.appendStatementInput("NAME")
+        .setCheck("exercise");
+    this.setColour(345);
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['exercise'] = {
+  init: function() { 
+    this.appendDummyInput()
+        .appendField("Exercise")
+        .appendField(new Blockly.FieldTextInput("squats"), "NAME");
+    this.appendValueInput("REPS")
+        .setCheck("Number");
+    this.appendValueInput("SETS")
+        .setCheck("Number");
+    this.setPreviousStatement(true, "exercise");
+    this.setNextStatement(true, "exercise");
+    this.setColour(260);
+   this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.JavaScript['workout'] = function(block) {
+  var exercises = Blockly.JavaScript.statementToCode(block, 'NAME');
+  var code = `function workout() {
+    ${exercises}
+  }`;
+  return code;
+};
+
+Blockly.JavaScript['exercise'] = function(block) {
+  var name = block.getFieldValue('NAME');
+  var reps = Blockly.JavaScript.valueToCode(block, 'REPS', Blockly.JavaScript.ORDER_ATOMIC);
+  var sets = Blockly.JavaScript.valueToCode(block, 'SETS', Blockly.JavaScript.ORDER_ATOMIC);
+  var code = `${name}(${reps}, ${sets});\n`;
+  return code;
+};
