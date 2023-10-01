@@ -67,21 +67,21 @@ Blockly.Blocks['var2'] = {
     this.setHelpUrl("");
   }
 };
-
-Blockly.Blocks['math_number'] = {
-  /**
-   * Block for numeric value.
-   * @this {Blockly.Block}
-   */
-  init: function() {
-    this.setHelpUrl(Blockly.Msg.MATH_NUMBER_HELPURL);
-    this.setColour(Blockly.Msg.MATH_HUE);
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldNumber('3'), 'NUM');
-    this.setOutput(true, 'Number');
-    this.setTooltip(Blockly.Msg.MATH_NUMBER_TOOLTIP);
-  }
-};
+// 
+// Blockly.Blocks['math_number'] = {
+//   /**
+//    * Block for numeric value.
+//    * @this {Blockly.Block}
+//    */
+//   init: function() {
+//     this.setHelpUrl(Blockly.Msg.MATH_NUMBER_HELPURL);
+//     this.setColour(Blockly.Msg.MATH_HUE);
+//     this.appendDummyInput()
+//         .appendField(new Blockly.FieldNumber('3'), 'NUM');
+//     this.setOutput(true, 'Number');
+//     this.setTooltip(Blockly.Msg.MATH_NUMBER_TOOLTIP);
+//   }
+// };
 Blockly.JavaScript.forBlock['abs'] = function(block) {
   var var_name = Blockly.JavaScript.valueToCode(block, 'VAR', Blockly.JavaScript.ORDER_NONE);
   var expr_code = Blockly.JavaScript.valueToCode(block, 'EXPR', Blockly.JavaScript.ORDER_NONE);
