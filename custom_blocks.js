@@ -22,6 +22,8 @@ Blockly.Blocks['app'] = {
         .setCheck(["var", "exp", "Number"])
     this.appendValueInput("EXPR2")
         .setCheck(["var", "exp", "Number"]);
+    this.appendValueInput("EXPR2")
+        .setCheck(["var", "exp", "Number"]);
     this.setInputsInline(true);
     this.setOutput(true, "exp");
     this.setColour(330);
@@ -90,6 +92,7 @@ Blockly.JavaScript.forBlock['abs'] = function(block) {
 Blockly.JavaScript.forBlock['app'] = function(block) {
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
+  var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
   var code = '(' + expr1_code + ')(' + expr2_code + ')';
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
