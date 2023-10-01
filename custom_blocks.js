@@ -93,19 +93,19 @@ Blockly.JavaScript.forBlock['app'] = function(block) {
 };
 
 Blockly.JavaScript.forBlock['var'] = function(block) {
-  var var_name = block.getFieldValue('NAME');
+  var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript.forBlock['var1'] = function(block) {
-  var var_name = block.getFieldValue('NAME');
+  var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript.forBlock['var2'] = function(block) {
-  var var_name = block.getFieldValue('NAME');
+  var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
