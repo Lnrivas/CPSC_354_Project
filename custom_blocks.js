@@ -19,11 +19,11 @@ Blockly.Blocks['app'] = {
         .appendField("Set(s)")
         .appendField(new Blockly.FieldTextInput("squats"), "Exercise");
     this.appendValueInput("EXPR1")
-        .setCheck(["var", "exp", "Number"])
+        .setCheck(["var", "var1", "var2", "exp", "Number"])
     this.appendValueInput("EXPR2")
-        .setCheck(["var", "exp", "Number"]);
+        .setCheck(["var", "var1", "var2", "exp", "Number"]);
     this.appendValueInput("EXPR2")
-        .setCheck(["var", "exp", "Number"]);
+        .setCheck(["var", "var1", "var2", "exp", "Number"]);
     this.setInputsInline(true);
     this.setOutput(true, "exp");
     this.setColour(330);
