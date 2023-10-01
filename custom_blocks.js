@@ -32,7 +32,7 @@ Blockly.Blocks['var'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Set(s)")
-        .appendField(new Blockly.FieldTextInput("x"), "NAME");
+        .appendField(new Blockly.FieldNumber('3'), 'NUM');
     this.setOutput(true, "var");
     this.setColour(430);
     this.setTooltip("");
@@ -44,7 +44,7 @@ Blockly.Blocks['var1'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Rep(s)")
-        .appendField(new Blockly.FieldTextInput("x"), "NAME");
+        .appendField(new Blockly.FieldNumber('3'), 'NUM');
     this.setOutput(true, "var1");
     this.setColour(430);
     this.setTooltip("");
@@ -56,7 +56,7 @@ Blockly.Blocks['var2'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Rest")
-        .appendField(new Blockly.FieldTextInput("x"), "NAME");
+        .appendField(new Blockly.FieldNumber('3'), 'NUM');
     this.setOutput(true, "var2");
     this.setColour(430);
     this.setTooltip("");
