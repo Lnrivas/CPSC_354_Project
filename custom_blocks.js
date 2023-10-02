@@ -82,14 +82,14 @@ Blockly.Blocks['var2'] = {
 //     this.setTooltip(Blockly.Msg.MATH_NUMBER_TOOLTIP);
 //   }
 // };
-Blockly.JavaScript.forBlock['abs'] = function(block) {
+Blockly.JavaScript['abs'] = function(block) {
   var var_name = Blockly.JavaScript.valueToCode(block, 'VAR', Blockly.JavaScript.ORDER_NONE);
   var expr_code = Blockly.JavaScript.valueToCode(block, 'EXPR', Blockly.JavaScript.ORDER_NONE);
   var code = '(' + var_name + ' => ' + expr_code + ')';
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-Blockly.JavaScript.forBlock['app'] = function(block) {
+Blockly.JavaScript['app'] = function(block) {
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
@@ -97,19 +97,19 @@ Blockly.JavaScript.forBlock['app'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-Blockly.JavaScript.forBlock['var'] = function(block) {
+Blockly.JavaScript['var'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
-Blockly.JavaScript.forBlock['var1'] = function(block) {
+Blockly.JavaScript['var1'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
-Blockly.JavaScript.forBlock['var2'] = function(block) {
+Blockly.JavaScript['var2'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
