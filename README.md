@@ -1,7 +1,7 @@
 # Fitness Program DSL
 
 ## Our Published Website
-https://lnrivas.github.io/CPSC_354_Project/
+https://lnrivas.github.io/CPSC_354_Project/design-blocks/
 
 ## Group Members
 1. Luis Rivas
