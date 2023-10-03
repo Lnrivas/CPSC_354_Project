@@ -1,4 +1,7 @@
-# https://lnrivas.github.io/CPSC_354_Project/
+# Fitness Program DSL
+
+## Our Published Website
+https://lnrivas.github.io/CPSC_354_Project/
 
 ## Group Members
 1. Luis Rivas
