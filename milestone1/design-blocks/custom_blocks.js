@@ -19,11 +19,11 @@ Blockly.Blocks['exercise'] = {
         .appendField("Exercise")
         .appendField(new Blockly.FieldTextInput("Exercise Name"));
     this.appendValueInput("EXPR1")
-        .setCheck(["var", "var1", "var2", "exp", "Number"])
+        .setCheck(["sets"])
     this.appendValueInput("EXPR2")
-        .setCheck(["var", "var1", "var2", "exp", "Number"]);
+        .setCheck(["reps"]);
     this.appendValueInput("EXPR3")
-        .setCheck(["var", "var1", "var2", "exp", "Number"]);
+        .setCheck(["rest"]);
     this.setInputsInline(true);
     this.setOutput(true, "exp");
     this.setColour(330);
@@ -37,7 +37,7 @@ Blockly.Blocks['sets'] = {
     this.appendDummyInput()
         .appendField("Set(s)")
         .appendField(new Blockly.FieldNumber('3'), 'NUM');
-    this.setOutput(true, "var");
+    this.setOutput(true, "sets");
     this.setColour(430);
     this.setTooltip("");
     this.setHelpUrl("");
@@ -49,7 +49,7 @@ Blockly.Blocks['reps'] = {
     this.appendDummyInput()
         .appendField("Rep(s)")
         .appendField(new Blockly.FieldNumber('3'), 'NUM');
-    this.setOutput(true, "var1");
+    this.setOutput(true, "reps");
     this.setColour(430);
     this.setTooltip("");
     this.setHelpUrl("");
@@ -61,7 +61,7 @@ Blockly.Blocks['rest'] = {
     this.appendDummyInput()
         .appendField("Rest")
         .appendField(new Blockly.FieldNumber('3'), 'NUM');
-    this.setOutput(true, "var2");
+    this.setOutput(true, "rest");
     this.setColour(430);
     this.setTooltip("");
     this.setHelpUrl("");
