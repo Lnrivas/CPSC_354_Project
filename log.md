@@ -11,6 +11,13 @@
 - Template of excersize in custom_blocks.js
 - Annotated referances
 # Ivan Orlovic
+- Worked on outline of the project and goals that we wanted to achieve with the project
+- Created initial design of blocks, their shapes, and how they should interact
+- Created custom_block.js and initial block designs
+- Worked on design.md
+- worked on index.html
+- fixed generate code when blocks are designed to generate with three input variables
+-
 # Peter Senko
 
 # AI

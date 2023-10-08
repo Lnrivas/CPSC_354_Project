@@ -1,17 +1,3 @@
-Blockly.Blocks['workout'] = {
-  init: function() {
-    this.appendValueInput("VAR")
-        .setCheck("var")
-        .appendField("Workout");
-    this.appendValueInput("EXPR")
-        .setCheck(["var", "exp", "Number"]);
-    this.setInputsInline(true);
-    this.setOutput(true, "exp");
-    this.setColour(130);
-    this.setTooltip("");
-    this.setHelpUrl("");
-  }
-};
 
 Blockly.Blocks['exercise'] = {
   init: function() {
@@ -66,13 +52,6 @@ Blockly.Blocks['rest'] = {
     this.setTooltip("");
     this.setHelpUrl("");
   }
-};
-
-Blockly.JavaScript.forBlock['workout'] = function(block) {
-  var var_name = Blockly.JavaScript.valueToCode(block, 'VAR', Blockly.JavaScript.ORDER_NONE);
-  var expr_code = Blockly.JavaScript.valueToCode(block, 'EXPR', Blockly.JavaScript.ORDER_NONE);
-  var code = '(' + var_name + ' => ' + expr_code + ')';
-  return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
 Blockly.JavaScript.forBlock['exercise'] = function(block) {
