@@ -21,4 +21,4 @@
 # Peter Senko
 
 # AI
-We did not use AI for this project but we could implement an AI tool to help make the use of blocky easier.
+Ivan - Chat GPT used to help debug code when errors were encountered and to help understand the code that was given to us by Dr. Kurz line by line. 
