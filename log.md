@@ -17,7 +17,7 @@
 - Worked on design.md
 - worked on index.html
 - fixed generate code when blocks are designed to generate with three input variables
--
+- 
 # Peter Senko
 
 # AI
