@@ -17,7 +17,7 @@ Blockly.Blocks['exercise'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Exercise")
-        .appendField(new Blockly.FieldTextInput("Exercise Name"), "EXERCISE_NAME"); // Add an input field for the exercise name
+        .appendField(new Blockly.FieldTextInput("Exercise Name"), "EXERCISE_NAME"); 
     this.appendValueInput("EXPR1")
         .setCheck(["sets"]);
     this.appendValueInput("EXPR2")
@@ -80,11 +80,10 @@ Blockly.JavaScript.forBlock['exercise'] = function(block) {
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
-  var code = "console.log(\"Your exercise consists of " + expr1_code + " sets of " + expr2_code + exerciseName + " with " + expr3_code + " minutes of rest time in between.\")";
-
+  var code = "console.log(\"Your exercise consists of " + expr1_code + " sets of " + expr2_code +
+  " " + exerciseName + " with " + expr3_code + " minutes of rest time in between.\")";
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
-
 
 Blockly.JavaScript.forBlock['sets'] = function(block) {
   var var_name = block.getFieldValue('NUM');
@@ -102,29 +101,4 @@ Blockly.JavaScript.forBlock['rest'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
-};
-
-Blockly.Blocks['math_arithmetic'] = {
-  /**
-   * Block for arithmetic operations.
-   * @this {Blockly.Block}
-   */
-  init: function() {
-    this.setHelpUrl(Blockly.Msg.MATH_ARITHMETIC_HELPURL);
-    this.setColour(Blockly.Msg.MATH_HUE);
-    this.setOutput(true, 'Number');
-    this.appendValueInput('A')
-        .setCheck(['Number', 'var', 'exp']);
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([
-            ['+', 'ADD'],
-            ['-', 'MINUS'],
-            ['\u00D7', 'MULTIPLY'],
-            ['\u00F7', 'DIVIDE'],
-            ['^', 'POWER']]), 'OP');
-    this.appendValueInput('B')
-        .setCheck(['Number', 'var', 'exp']);
-    this.setInputsInline(true);
-    this.setTooltip(Blockly.Msg.MATH_ARITHMETIC_TOOLTIP);
-  }
 };
