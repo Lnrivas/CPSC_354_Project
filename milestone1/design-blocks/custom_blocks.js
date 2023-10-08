@@ -17,9 +17,9 @@ Blockly.Blocks['exercise'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Exercise")
-        .appendField(new Blockly.FieldTextInput("Exercise Name"));
+        .appendField(new Blockly.FieldTextInput("Exercise Name"), "EXERCISE_NAME"); // Add an input field for the exercise name
     this.appendValueInput("EXPR1")
-        .setCheck(["sets"])
+        .setCheck(["sets"]);
     this.appendValueInput("EXPR2")
         .setCheck(["reps"]);
     this.appendValueInput("EXPR3")
@@ -76,12 +76,15 @@ Blockly.JavaScript.forBlock['workout'] = function(block) {
 };
 
 Blockly.JavaScript.forBlock['exercise'] = function(block) {
+  var exerciseName = block.getFieldValue('EXERCISE_NAME');
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
-  var code = '(' + expr1_code + ')(' + expr2_code + ')(' + expr3_code + ')';
+  var code = "console.log(\"Your exercise consists of " + expr1_code + " sets of " + expr2_code + exerciseName + " with " + expr3_code + " minutes of rest time in between.\")";
+
   return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
+
 
 Blockly.JavaScript.forBlock['sets'] = function(block) {
   var var_name = block.getFieldValue('NUM');
