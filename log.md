@@ -25,7 +25,11 @@ Worked on index.html
 - fixed js code to no longer get undefined when runnning
 - Added workout block so that we can append multiple exercise, to create a workout routine.
 # Peter Senko
-
+- Worked with Workout block so that we can take in multiple exercises
+- worked on design.md
+- worked on readme.md
+- Helped fix bugs and issues with code
+  
 # AI
 Ivan - Chat GPT used to help debug code when errors were encountered and to help understand the code that was given to us by Dr. Kurz line by line. 
 Kevan - ChatGPT was used to help revise Readme and text documents and correct them for errors and unclearness.
