@@ -27,3 +27,4 @@ Worked on index.html
 
 # AI
 Ivan - Chat GPT used to help debug code when errors were encountered and to help understand the code that was given to us by Dr. Kurz line by line. 
+Kevan - ChatGPT was used to help revise Readme and text documents and correct them for errors and unclearness.
