@@ -8,8 +8,6 @@ Blockly.Blocks['workout'] = {
       this.setColour(130);
       this.setTooltip("");
       this.setHelpUrl("");
-      this.setPreviousStatement(true);  // Allow blocks to be stacked on top
-      this.setNextStatement(true);  // Allow blocks to be stacked below
   }
 };
 
@@ -17,7 +15,7 @@ Blockly.Blocks['exercise'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Exercise")
-        .appendField(new Blockly.FieldTextInput("Exercise Name"), "EXERCISE_NAME"); 
+        .appendField(new Blockly.FieldTextInput("Exercise Name"), "EXERCISE_NAME");
     this.appendValueInput("EXPR1")
         .setCheck(["sets"]);
     this.appendValueInput("EXPR2")
