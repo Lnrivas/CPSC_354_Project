@@ -17,10 +17,13 @@ To test this milestone:
 
 1. Clone the repository or download the milestone1 folder
 2. Open index.html in a browser to load the page
-3. Build a workout program using the custom blocks
-4. Click "Generate JavaScript" to view the generated code
-5. Click "Run JavaScript" to run the program and view the output
-6. Try saving and loading programs using the save and load buttons
+
+You can also use the link posted on the GitHub pages. 
+
+4. Build a workout program using the custom blocks
+5. Click "Generate JavaScript" to view the generated code
+6. Click "Run JavaScript" to run the program and view the output
+7. Try saving and loading programs using the save and load buttons
 
 The workspace allows creating exercises, setting the number of sets, reps, and rest time. The generated code will print out the workout details.
 
