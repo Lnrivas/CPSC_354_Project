@@ -12,6 +12,7 @@
 - Annotated referances
 - Worked on last section of design2.md
 - Worked on README.md
+- Worked on milestone1/README.md
 - Started workout block
 Worked on index.html
 # Ivan Orlovic
