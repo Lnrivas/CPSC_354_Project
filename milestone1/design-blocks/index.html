@@ -18,6 +18,7 @@
     <div class="row">
         <div id="blocklyDiv" class="full-width"></div>
         <xml id="toolbox" style="display: none">
+            <block type="workout"></block>
             <block type="exercise"></block>
             <block type="sets"></block>
             <block type="reps"></block>
@@ -48,12 +49,18 @@
 
         function runCode() {
             var code = Blockly.JavaScript.workspaceToCode(workspace);
+            var log = console.log;
+            var output = '';
+            console.log = function (message) {
+            output += message + '\n';
+            };
             try {
-                var output = eval(code);
+                eval(code);
                 document.getElementById('outputDiv').innerText = output;
             } catch (e) {
                 document.getElementById('outputDiv').innerText = 'Error: ' + e;
             }
+            console.log = log;  // Restore original console.log function
         }
 
         function saveBlocks() {
