@@ -18,6 +18,7 @@
 - worked on index.html
 - fixed generate code when blocks are designed to generate with three input variables
 - fixed js code to no longer get undefined when runnning
+- Added workout block so that we can append multiple exercise, to create a workout routine.
 # Peter Senko
 
 # AI
