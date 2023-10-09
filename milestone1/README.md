@@ -1,5 +1,3 @@
-Here is a README.md file for the milestone1 folder:
-
 # Workout DSL Project - Milestone 1
 
 This project allows creating and running simple workout programs using a block-based programming interface. 
