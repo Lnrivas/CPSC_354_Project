@@ -7,9 +7,13 @@
 - Worked on building blocks and generating code for custom_blocks.js
 - Added links and descriptions to annotated-references.md
 # Kevan Parang
-- Worked on design2.md and README.md
+- Worked on design2.md 
 - Template of excersize in custom_blocks.js
 - Annotated referances
+- Worked on last section of design2.md
+- Worked on README.md
+- Started workout block
+Worked on index.html
 # Ivan Orlovic
 - Worked on outline of the project and goals that we wanted to achieve with the project
 - Created initial design of blocks, their shapes, and how they should interact
