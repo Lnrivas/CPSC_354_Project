@@ -30,6 +30,7 @@
         <button onclick="runCode()">Run JavaScript</button>
         <button onclick="saveBlocks()">Save Blocks</button>
         <button onclick="loadBlocks()">Load Blocks</button>
+        <button onclick="downloadJavaScript()">Download JavaScript</button>
         <input type="file" id="loadInput" style="display: none;" onchange="loadBlocksFile(event)">
     </div>
     <div class="row">
@@ -86,6 +87,18 @@
             };
             reader.readAsText(file);
         }
+
+        function downloadJavaScript() {
+            var code = Blockly.JavaScript.workspaceToCode(workspace);
+            var blob = new Blob([code], { type: 'text/javascript' });
+            var a = document.createElement('a');
+            a.download = 'workout.js'; // Specify the filename for the downloaded JavaScript file
+            a.href = URL.createObjectURL(blob);
+            a.click();
+        }
+
+</script>
+
 
     </script>
 </body>
