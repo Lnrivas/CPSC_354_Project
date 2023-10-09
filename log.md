@@ -28,6 +28,8 @@ Worked on index.html
 - Added workout block so that we can append multiple exercise, to create a workout routine.
 # Peter Senko
 - Worked with Workout block so that we can take in multiple exercises
+- Worked on index.html 
+- Made the Download Javascript button
 - worked on design.md
 - worked on readme.md
 - Helped fix bugs and issues with code
