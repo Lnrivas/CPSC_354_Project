@@ -1,6 +1,6 @@
 # Luis Rivas
-- Created Canvas discussion post describing project
-- Created GitHub repo and published page
+- Created initial Canvas discussion post describing project
+- Created GitHub repo, managed file structure, and published page
 - Worked on design.md
 - Worked on last section of design2.md
 - Worked on README.md
@@ -8,6 +8,7 @@
 - Worked on building blocks and handling what can go where, what type everything is, naming, etc. for custom_blocks.js
 - Worked on generating code for built blocks in custom_blocks.js
 - Added links and descriptions to annotated-references.md
+- Created midterm canvas discussion post
 # Kevan Parang
 - Worked on design2.md
 - Template of excersize in custom_blocks.js
@@ -28,7 +29,7 @@ Worked on index.html
 - Added workout block so that we can append multiple exercise, to create a workout routine.
 # Peter Senko
 - Worked with Workout block so that we can take in multiple exercises
-- Worked on index.html 
+- Worked on index.html
 - Made the Download Javascript button
 - worked on design.md
 - worked on readme.md
