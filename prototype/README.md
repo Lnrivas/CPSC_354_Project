@@ -8,6 +8,7 @@ The milestone1 folder contains:
 - custom_blocks.js - JavaScript code that defines the custom workout blocks
 - styles.css - CSS styling for the page
 - README.md - This file
+- ExampleDemoScreenshot - A picture showing the example demo described in the steps below
 
 ## Instructions to Recreate Demo
 
@@ -29,3 +30,4 @@ The milestone1 folder contains:
 https://docs.google.com/presentation/d/123l9Y1sNlLld6egzEHDdWt02UK8BmIIXUSmTpxX29sU/edit#slide=id.p
 
 ## Screenshot of Fitness Program DSL Example Demonstration
+![Example Demo](ExampleDemoScreenshot.png)
