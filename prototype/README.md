@@ -23,4 +23,9 @@ The milestone1 folder contains:
 10. Select a rest block and insert it into the new exercise block. Enter the number of desired rest. Example: "1".
 11. When you are done building workouts, press the "Generate JavaScript" button to generate code for the program.
 12. Then press the "Run JavaScript" button to run the code and view the output, which in this can details the workout you built.
-13. You can also press the "Download JavaScript" button to save a file with the runnable code. 
+13. You can also press the "Download JavaScript" button to save a file with the runnable code.
+
+## Midterm Presentation
+https://docs.google.com/presentation/d/123l9Y1sNlLld6egzEHDdWt02UK8BmIIXUSmTpxX29sU/edit#slide=id.p
+
+## Screenshot of Fitness Program DSL Example Demonstration
