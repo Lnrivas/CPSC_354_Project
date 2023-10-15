@@ -9,6 +9,7 @@
 - Worked on generating code for built blocks in custom_blocks.js
 - Added links and descriptions to annotated-references.md
 - Created midterm canvas discussion post
+- Created prototype/README.md 
 # Kevan Parang
 - Worked on design2.md
 - Template of excersize in custom_blocks.js
