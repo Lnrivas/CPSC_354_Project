@@ -2,7 +2,7 @@
 
 ## Contents
 
-The milestone1 folder contains:
+The src folder contains:
 
 - index.html - The main HTML page that loads Blockly and the custom blocks
 - custom_blocks.js - JavaScript code that defines the custom workout blocks
