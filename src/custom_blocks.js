@@ -68,6 +68,17 @@ Blockly.Blocks['rest'] = {
   }
 };
 
+Blockly.Blocks['weight'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Weight")
+        .appendField(new Blockly.FieldTextInput("Weight Value"), "WEIGHT_VALUE");
+    this.setColour(230);
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
 Blockly.JavaScript.forBlock['workout'] = function(block) {
   var workoutName = block.getFieldValue('WORKOUT_NAME');
   var exercises = Blockly.JavaScript.statementToCode(block, 'EXERCISES');
@@ -98,6 +109,12 @@ Blockly.JavaScript.forBlock['reps'] = function(block) {
 };
 
 Blockly.JavaScript.forBlock['rest'] = function(block) {
+  var var_name = block.getFieldValue('NUM');
+  var code = var_name;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.JavaScript.forBlock['weight'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
