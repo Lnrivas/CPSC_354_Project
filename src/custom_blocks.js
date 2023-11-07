@@ -61,7 +61,7 @@ Blockly.Blocks['reps'] = {
 Blockly.Blocks['weight'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Weight")
+        .appendField("Weight(s)")
         .appendField(new Blockly.FieldTextInput('3'), 'NUM');
         this.setOutput(true, "weight");
         this.setColour(430);
@@ -94,7 +94,8 @@ Blockly.JavaScript.forBlock['exercise'] = function(block) {
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
-  var code = exerciseName + ' (' + expr1_code + ' sets, ' + expr2_code + ' reps, ' + expr3_code + ' minutes rest)';
+  var expr4_code = Blockly.JavaScript.valueToCode(block, 'EXPR4', Blockly.JavaScript.ORDER_NONE);
+  var code = exerciseName + ' (' + expr1_code + ' sets, ' + expr2_code + ' reps, ' + expr3_code + ' pound weights, ' + expr4_code + ' minutes rest)';
   return code + '\n';
 };
 
