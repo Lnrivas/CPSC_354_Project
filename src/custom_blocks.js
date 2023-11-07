@@ -58,18 +58,6 @@ Blockly.Blocks['reps'] = {
   }
 };
 
-Blockly.Blocks['rest'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("Rest")
-        .appendField(new Blockly.FieldNumber('3'), 'NUM');
-    this.setOutput(true, "rest");
-    this.setColour(430);
-    this.setTooltip("");
-    this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['weight'] = {
   init: function() {
     this.appendDummyInput()
@@ -79,6 +67,18 @@ Blockly.Blocks['weight'] = {
         this.setColour(430);
         this.setTooltip("");
         this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['rest'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Rest")
+        .appendField(new Blockly.FieldNumber('3'), 'NUM');
+    this.setOutput(true, "rest");
+    this.setColour(430);
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
 
