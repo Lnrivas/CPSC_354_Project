@@ -21,6 +21,8 @@ Blockly.Blocks['exercise'] = {
     this.appendValueInput("EXPR2")
         .setCheck(["reps"]);
     this.appendValueInput("EXPR3")
+        .setCheck(["weight"]);
+    this.appendValueInput("EXPR4")
         .setCheck(["rest"]);
     this.setInputsInline(true);
     this.setOutput(true, "exp");
