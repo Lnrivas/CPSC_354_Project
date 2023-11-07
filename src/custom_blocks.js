@@ -21,6 +21,8 @@ Blockly.Blocks['exercise'] = {
     this.appendValueInput("EXPR2")
         .setCheck(["reps"]);
     this.appendValueInput("EXPR3")
+        .setCheck(["weight"]);
+    this.appendValueInput("EXPR4")
         .setCheck(["rest"]);
     this.setInputsInline(true);
     this.setOutput(true, "exp");
@@ -56,6 +58,18 @@ Blockly.Blocks['reps'] = {
   }
 };
 
+Blockly.Blocks['weight'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Weight(s)")
+        .appendField(new Blockly.FieldTextInput('3'), 'NUM');
+        this.setOutput(true, "weight");
+        this.setColour(430);
+        this.setTooltip("");
+        this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['rest'] = {
   init: function() {
     this.appendDummyInput()
@@ -80,7 +94,8 @@ Blockly.JavaScript.forBlock['exercise'] = function(block) {
   var expr1_code = Blockly.JavaScript.valueToCode(block, 'EXPR1', Blockly.JavaScript.ORDER_NONE);
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_NONE);
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_NONE);
-  var code = exerciseName + ' (' + expr1_code + ' sets, ' + expr2_code + ' reps, ' + expr3_code + ' minutes rest)';
+  var expr4_code = Blockly.JavaScript.valueToCode(block, 'EXPR4', Blockly.JavaScript.ORDER_NONE);
+  var code = exerciseName + ' (' + expr1_code + ' sets, ' + expr2_code + ' reps, ' + expr3_code + ' pound weights, ' + expr4_code + ' minutes rest)';
   return code + '\n';
 };
 
@@ -98,6 +113,12 @@ Blockly.JavaScript.forBlock['reps'] = function(block) {
 };
 
 Blockly.JavaScript.forBlock['rest'] = function(block) {
+  var var_name = block.getFieldValue('NUM');
+  var code = var_name;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.JavaScript.forBlock['weight'] = function(block) {
   var var_name = block.getFieldValue('NUM');
   var code = var_name;
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
