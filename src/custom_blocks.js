@@ -72,10 +72,11 @@ Blockly.Blocks['weight'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Weight")
-        .appendField(new Blockly.FieldTextInput("Weight Value"), "WEIGHT_VALUE");
-    this.setColour(230);
-    this.setTooltip("");
-    this.setHelpUrl("");
+        .appendField(new Blockly.FieldTextInput('3'), 'NUM');
+        this.setOutput(true, "weight");
+        this.setColour(430);
+        this.setTooltip("");
+        this.setHelpUrl("");
   }
 };
 
