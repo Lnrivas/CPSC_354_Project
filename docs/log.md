@@ -11,6 +11,7 @@
 - Created midterm canvas discussion post
 - Created prototype/README.md
 - Reviewed PR, added everything necessary for new "weight" block
+- Worked on peer-review.md
 # Kevan Parang
 - Worked on design2.md
 - Template of excersize in custom_blocks.js
