@@ -21,6 +21,11 @@ Blockly.Blocks['exercise'] = {
           ["Squat", "SQUAT"], 
           ["Deadlift", "DEADLIFT"],
           ["Bench Press", "BENCH_PRESS"],
+          ["Pull-up", "PULL_UP"], 
+          ["Lunge", "LUNGE"], 
+          ["Plank", "PLANK"],
+          ["Shoulder Press", "SHOULDER_PRESS"],
+          ["Bicep Curl", "BICEP_CURL"],
           // Add more exercises as needed
       ]), "EXERCISE_NAME");
     this.appendValueInput("EXPR1")
