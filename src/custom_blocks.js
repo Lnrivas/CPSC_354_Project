@@ -148,17 +148,19 @@ Blockly.JavaScript['workout'] = function (block) {
   var workoutName = block.getFieldValue('WORKOUT_NAME');
   var exercises = Blockly.JavaScript.statementToCode(block, 'EXERCISES').trim();
 
-  // Splitting the exercises string into an array, trimming, and joining with a comma
-  var exercisesArray = exercises.split('\\n');
+  // Splitting the exercises string into an array, trimming, and joining with a new line
+  var exercisesArray = exercises.split('\n');
   var exercisesClean = exercisesArray.map(function (exercise) {
     return exercise.trim();
   }).filter(function (exercise) {
     return exercise.length > 0;
-  }).join(', ');
+  }).join('\n');
 
-  var code = 'console.log("' + workoutName + ' workout consists of ' + exercisesClean + '.");\n';
+  var code = 'console.log("' + workoutName + ' workout consists of:\\n' + exercisesClean + '\\n");';
   return code;
 };
+
+
 
 Blockly.JavaScript['exercise'] = function (block) {
   var exerciseName = Blockly.JavaScript.valueToCode(block, 'EXERCISE_NAME', Blockly.JavaScript.ORDER_ATOMIC) || '""';
@@ -166,7 +168,7 @@ Blockly.JavaScript['exercise'] = function (block) {
   var expr2_code = Blockly.JavaScript.valueToCode(block, 'EXPR2', Blockly.JavaScript.ORDER_ATOMIC) || '0';
   var expr3_code = Blockly.JavaScript.valueToCode(block, 'EXPR3', Blockly.JavaScript.ORDER_ATOMIC) || '0';
   var expr4_code = Blockly.JavaScript.valueToCode(block, 'EXPR4', Blockly.JavaScript.ORDER_ATOMIC) || '0';
-  var code = exerciseName + ' for ' + expr1_code + ' sets of ' + expr2_code + ' reps each, using ' + expr3_code + ' pound weights, with ' + expr4_code + ' minutes of rest in between)';
+  var code = exerciseName + ' for ' + expr1_code + ' sets of ' + expr2_code + ' reps each, using ' + expr3_code + ' pound weights, with ' + expr4_code + ' minutes of rest in between.';
   return code;
 };
 
