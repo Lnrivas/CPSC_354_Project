@@ -20,7 +20,8 @@
 - Worked on README.md
 - Worked on milestone1/README.md
 - Started workout block
-Worked on index.html
+- Worked on index.html
+- Worked on technical documentation video
 # Ivan Orlovic
 - Worked on outline of the project and goals that we wanted to achieve with the project
 - Created initial design of blocks, their shapes, and how they should interact
